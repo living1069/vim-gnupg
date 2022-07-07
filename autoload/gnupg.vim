@@ -85,12 +85,12 @@ function gnupg#init(bufread)
 
     " if persistent undo is present, disable it for this buffer
     if exists('+undofile')
-      setl noundofile
+      "setl noundofile
     endif
 
     " first make sure nothing is written to ~/.viminfo while editing
     " an encrypted file.
-    set viminfo=
+    "set viminfo=
   endif
 
   " the rest only has to be run once
